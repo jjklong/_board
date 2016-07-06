@@ -1,3 +1,117 @@
-audio{
-  width: 100%
+$grey: #4B6982;
+$blue: #333A7B;
+$liblue: #70C6C7;
+$green: #B4FFD8;
+
+//Fonts:
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header{
+  #bb{
+    background:$blue;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    padding: .4em 0;
+    }
+  #options{
+    text-align: center;
+    display: block;
+    .bmt{
+      width: 30%;
+      display: inline-block;
+      background: $liblue;
+      color: white;
+      font-size: 2em;
+      text-align: center;
+      padding: .4em 0;
+      border: 10px solid white;
+      &:hover{
+        background: $grey;
+        border-top: 10px solid $blue;
+        border-bottom: 10px solid $grey;
+      }
+    }
+  }
+}
+.audioWrap{
+  border-top: 2em solid $grey;
+  h3{
+    font-size: 1.5em;
+    text-align: center;
+    background: $grey;
+    color: white;
+    padding-bottom: .5em;
+  }
+  audio{
+    color: white;
+    width: 100%;
+    margin: 0;
+    background: $grey;
+    padding-bottom: 1em;
+  }
+}
+
+.postWrap{
+  position: relative;
+  #timeH{
+    display: inline-block;
+    text-align: right;
+    border: none;
+    margin: 1em 3em;
+    width: 20%;
+  }
+  #commH{
+    display: inline-block;
+    text-align: right;
+    border: none;
+    margin: 1em 5em;
+    width: 20%;
+  }
+  form{
+    #currentTime{
+      text-align: right;
+      border: none;
+      font-size: 2em;
+      margin: 2em 1em;
+      width: 20%;
+    }
+    #commentBox{
+      width: 50%;
+      height: 5em;
+      font-size: 1.4em;
+      border: none;
+      // border: 0.1em solid $liblue;
+      // border-radius: 10px;
+      // box-shadow: 1px 2px $liblue;
+      &:focus{
+        outline: none;
+      }
+    }
+    #submit{
+      font-size: 1.5em;
+      background-color: $liblue;
+      color: white;
+      text-transform: uppercase;
+      border: .1em solid $grey;
+      letter-spacing: 3px;
+      padding: .5em;
+      margin-left: 1em;
+    }
+  }
+
+  #commentsUl{
+    text-align: center;
+    font-size: 1.4em;
+    .postTime{
+      display: inline-block;
+      width: 40%;
+    }
+    .postNote{
+      display: inline-block;
+      width: 40%;
+    }
+  }
 }

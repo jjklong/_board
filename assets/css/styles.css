@@ -1,4 +1,88 @@
-audio {
-  width: 100%; }
+body {
+  font-family: 'Ubuntu', sans-serif; }
+
+.header #bb {
+  background: #333A7B;
+  color: white;
+  font-size: 4em;
+  text-align: center;
+  padding: .4em 0; }
+.header #options {
+  text-align: center;
+  display: block; }
+  .header #options .bmt {
+    width: 30%;
+    display: inline-block;
+    background: #70C6C7;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: .4em 0;
+    border: 10px solid white; }
+    .header #options .bmt:hover {
+      background: #4B6982;
+      border-top: 10px solid #333A7B;
+      border-bottom: 10px solid #4B6982; }
+
+.audioWrap {
+  border-top: 2em solid #4B6982; }
+  .audioWrap h3 {
+    font-size: 1.5em;
+    text-align: center;
+    background: #4B6982;
+    color: white;
+    padding-bottom: .5em; }
+  .audioWrap audio {
+    color: white;
+    width: 100%;
+    margin: 0;
+    background: #4B6982;
+    padding-bottom: 1em; }
+
+.postWrap {
+  position: relative; }
+  .postWrap #timeH {
+    display: inline-block;
+    text-align: right;
+    border: none;
+    margin: 1em 3em;
+    width: 20%; }
+  .postWrap #commH {
+    display: inline-block;
+    text-align: right;
+    border: none;
+    margin: 1em 5em;
+    width: 20%; }
+  .postWrap form #currentTime {
+    text-align: right;
+    border: none;
+    font-size: 2em;
+    margin: 2em 1em;
+    width: 20%; }
+  .postWrap form #commentBox {
+    width: 50%;
+    height: 5em;
+    font-size: 1.4em;
+    border: none; }
+    .postWrap form #commentBox:focus {
+      outline: none; }
+  .postWrap form #submit {
+    font-size: 1.5em;
+    background-color: #70C6C7;
+    color: white;
+    text-transform: uppercase;
+    border: 0.1em solid #4B6982;
+    letter-spacing: 3px;
+    padding: .5em;
+    margin-left: 1em; }
+  .postWrap #commentsUl {
+    text-align: center;
+    font-size: 1.4em; }
+    .postWrap #commentsUl .postTime {
+      display: inline-block;
+      width: 40%; }
+    .postWrap #commentsUl .postNote {
+      display: inline-block;
+      width: 40%; }
 
 /*# sourceMappingURL=styles.css.map */

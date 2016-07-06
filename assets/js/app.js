@@ -21,3 +21,8 @@ myApp.config(function($routeProvider){
       redirectTo: '/'
     });
   });
+
+
+
+  //REFERENCED FILES
+  // FOR "theSong" DIRECTIVE http://stackoverflow.com/questions/17257435/ng-model-for-html5-audio-element-in-angularjs - http://jsfiddle.net/ASjRP/20/

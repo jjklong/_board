@@ -1,33 +1,48 @@
 <div class="bassboard" ng-controller="BassBoard as bass">
 
 <div class="header">
-  _Board
+  <h1 id="bb">_Board</h1>
+
+  <ul id="options">
+    <li class="bmt">Bass</li>
+    <li class="bmt">Midd</li>
+    <li class="bmt">Treb</li>
+  </ul>
+
 </div>
-<ul>
-  <li>Bass</li>
-  <li>Midd</li>
-  <li>Treb</li>
-</ul>
 
+<div class="audioWrap">
+  <h3>Song Demo</h3>
+  <audio controls the-song>
+    <source src="assets/mp3/bassboard.mp3" type="audio/mpeg">
+  </audio>
+</div>
 
-<audio controls the-song>
-  <source src="assets/mp3/bassboard.mp3" type="audio/mpeg">
-</audio>
 
 <!-- FILTER ROUNDS number TO CLOSEST WHOLE NUMBER -->
-<button ng-click="getTime(timeElapsed)" type="button" name="button">Add Comment</button>
+<!-- <button ng-click="getTime(timeElapsed)" type="button" name="button">Add Comment</button> -->
 
-<form ng-submit="postComment()" class="comments" method="post">
-  <input type="text" name="name" value="" ng-model="time" placeholder="{{timeElapsed}}">
-  <input type="text" name="name" value="" ng-model="note">
-  <input class="submit" type="submit" name="submit" value="">
-</form>
+<div class="postWrap">
 
-<ul>
-  <li ng-repeat="post in comment.posts">
-    {{post.time}}
-    {{post.note}}
-  </li>
-</ul>
+  <!-- <span id="timeH"><i class="fa fa-clock-o fa-4x" aria-hidden="true"></i></span><span id="commH"><i class="fa fa-commenting-o fa-4x" aria-hidden="true"></i></span> -->
+
+  <form ng-submit="postComment()" class="comments" method="post">
+    <input id="currentTime" type="text" name="name" value="" ng-model="time" placeholder="{{timeElapsed}}">
+    <input id="commentBox" type="text" name="name" value="" ng-model="note" placeholder="...{{timeElapsed}}...">
+    <input id="submit" type="submit" name="submit" value="Post">
+  </form>
+
+  <ul id="commentsUl">
+    <li class="posts" ng-repeat="post in comment.posts">
+      <div class="postTime">
+        {{post.time}}
+      </div>
+      <div class="postNote">
+        {{post.note}}
+      </div>
+    </li>
+  </ul>
+
+</div>
 
 </div>
