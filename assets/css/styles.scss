@@ -37,19 +37,19 @@ body{
   }
 }
 .audioWrap{
-  border-top: 2em solid $grey;
+  // border-top: 2em solid $grey;
   h3{
     font-size: 1.5em;
-    text-align: center;
-    background: $grey;
-    color: white;
-    padding-bottom: .5em;
+    text-align: left;
+    margin-left: 2em;
+    color: $grey;
+    padding: 1em;
   }
   audio{
     color: white;
     width: 100%;
     margin: 0;
-    background: $grey;
+    // background: $grey;
     padding-bottom: 1em;
   }
 }
@@ -75,7 +75,7 @@ body{
       text-align: right;
       border: none;
       font-size: 2em;
-      margin: 2em 1em;
+      margin: 1em;
       width: 20%;
     }
     #commentBox{
@@ -99,6 +99,14 @@ body{
       letter-spacing: 3px;
       padding: .5em;
       margin-left: 1em;
+    }
+    a{
+      text-decoration: none;
+      color: red;
+      padding: 0 1em;
+      &:visited{
+        color: red;
+      }
     }
   }
 

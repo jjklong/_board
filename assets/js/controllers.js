@@ -12,11 +12,15 @@ myApp.controller('BassBoard', ['$scope', '$filter', function($scope, $filter){
   };
 
 
-  $scope.postComment = function(e) {
+  $scope.postComment = function() {
     $scope.comment.posts.push({
       time: $scope.time,
       note: $scope.note
     });
+  };
+
+  $scope.deletePost = function(index){
+    $scope.comment.posts.splice(index,1);
   };
 
   $scope.getTime = function(time){

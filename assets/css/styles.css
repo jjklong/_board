@@ -24,20 +24,17 @@ body {
       border-top: 10px solid #333A7B;
       border-bottom: 10px solid #4B6982; }
 
-.audioWrap {
-  border-top: 2em solid #4B6982; }
-  .audioWrap h3 {
-    font-size: 1.5em;
-    text-align: center;
-    background: #4B6982;
-    color: white;
-    padding-bottom: .5em; }
-  .audioWrap audio {
-    color: white;
-    width: 100%;
-    margin: 0;
-    background: #4B6982;
-    padding-bottom: 1em; }
+.audioWrap h3 {
+  font-size: 1.5em;
+  text-align: left;
+  margin-left: 2em;
+  color: #4B6982;
+  padding: 1em; }
+.audioWrap audio {
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 1em; }
 
 .postWrap {
   position: relative; }
@@ -57,7 +54,7 @@ body {
     text-align: right;
     border: none;
     font-size: 2em;
-    margin: 2em 1em;
+    margin: 1em;
     width: 20%; }
   .postWrap form #commentBox {
     width: 50%;
@@ -75,6 +72,12 @@ body {
     letter-spacing: 3px;
     padding: .5em;
     margin-left: 1em; }
+  .postWrap form a {
+    text-decoration: none;
+    color: red;
+    padding: 0 1em; }
+    .postWrap form a:visited {
+      color: red; }
   .postWrap #commentsUl {
     text-align: center;
     font-size: 1.4em; }
